@@ -15,7 +15,13 @@ const imgSlideInicio = [
 const InicioSlides = () => {
   return (
     <div className="hero-carousel">
-        <Carousel showThumbs={false} autoPlay infiniteLoop interval={2000} showArrows={false} showStatus={false}>
+        <Carousel 
+        showThumbs={false}
+        //autoPlay
+        infiniteLoop
+        //interval={2000}
+        showArrows={false}
+        showStatus={false}>
             {imgSlideInicio.map((img) => (
                 <Image
                     src={img.imgUrl}
